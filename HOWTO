@@ -1,0 +1,46 @@
+Use add_sourceapp.sh from the Open GApps project root, when updating files in app, priv-app, lib or lib64.
+The other directories are to be maintained manually. Permissions must be sorted alphabetically.
+
+---
+Some APKs can only be retrieved from nexus images:
+Download one of the latest Nexus Phone images from https://developers.google.com/android/nexus/image
+If you don't use the image of a phone, some applications and libraries might miss, like the camera and/or the dialer.
+Pay also attention that APK files are not lacking their classes.dex!
+
+Extract the image-xxxxx-xxxxxx.zip from from the tgz archive
+Extract the system.img from the image-xxxxx-xxxxxx.zip
+Get sig2img from https://github.com/anestisb/android-simg2img
+Convert the system.img from a sparse android file to a disk-image file using android-simg2img: simg2img system.img system.raw.img
+Open the system.raw.img using a disk-mount application
+
+---
+Import the following apks from the Nexus image using the add_sourceapp.sh:
+/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
+/app/FaceLock/FaceLock.apk
+/priv-app/GoogleBackupTransport/GoogleBackupTransport.apk
+/priv-app/GoogleFeedback/GoogleFeedback.apk
+/priv-app/GoogleLoginService/GoogleLoginService.apk
+/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
+/priv-app/GooglePartnerSetup/GooglePartnerSetup.apk
+/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
+/priv-app/SetupWizard/SetupWizard.apk
+/priv-app/TagGoogle/TagGoogle.apk
+/lib/libfacelock_jni.so
+/lib/libfilterpack_facedetect.so
+/lib/libjni_latinimegoogle.so
+
+---
+Copy the following files and folders from the Nexus system image to their corresponding folder.
+Note that only the lib*.so files are architecture dependent, the other files can go into 'all':
+/etc/permissions/com.google.android.camera2.xml
+/etc/permissions/com.google.android.dialer.support.xml
+/etc/permissions/com.google.android.maps.xml
+/etc/permissions/com.google.android.media.effects.xml
+/etc/permissions/com.google.widevine.software.drm.xml
+/etc/preferred-apps/google.xml
+/framework/com.google.android.camera2.jar
+/framework/com.google.android.maps.jar
+/framework/com.google.android.media.effects.jar
+/framework/com.google.widevine.software.drm.jar
+/usr/srec
+/vendor/pittpatt
