@@ -319,6 +319,11 @@
         <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
         <permission name="android.permission.USE_SIP" fixed="false"/>
         <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Network -->
+        <permission name="android.permission.REQUEST_NETWORK_SCORES" fixed="false"/>
     </exception>
 
     <exception
