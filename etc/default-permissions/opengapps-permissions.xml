@@ -29,12 +29,6 @@
     -->
 
     <exception
-            package="com.android.facelock">
-        <!-- Camera -->
-        <permission name="android.permission.CAMERA" fixed="false"/>
-    </exception>
-
-    <exception
             package="com.android.vending">
         <!-- Contacts -->
         <permission name="android.permission.READ_CONTACTS" fixed="false"/>
