@@ -102,6 +102,13 @@
     </exception>
 
     <exception
+            package="com.google.android.apps.nexuslauncher">
+        <!-- Status bar -->
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS" fixed="false"/>
+        <permission name="android.permission.STATUS_BAR" fixed="false"/>
+    </exception>
+
+    <exception
             package="com.google.android.backuptransport">
         <!-- Contacts -->
         <permission name="android.permission.READ_CONTACTS" fixed="false"/>
