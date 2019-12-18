@@ -391,4 +391,9 @@
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
     </exception>
 
+    <exception
+            package="com.google.android.apps.wellbeing">
+    <permission name="android.permission.SUSPEND_APPS" fixed="false"/>
+    </exception>
+
 </exceptions>
