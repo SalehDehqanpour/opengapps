@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.opengapps.actionsservicesoverlay" platformBuildVersionCode="28" platformBuildVersionName="9">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.opengapps.actionsservicesoverlay" platformBuildVersionCode="28" platformBuildVersionName="9">
     <overlay android:isStatic="true" android:priority="3" android:targetPackage="android"/>
     <application android:hasCode="false" android:label="Actions Services overlay"/>
 </manifest>
