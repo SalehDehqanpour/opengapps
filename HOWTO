@@ -16,7 +16,6 @@ Open the system.raw.img using a disk-mount application
 ---
 Import the following apks from the Nexus image using the add_sourceapp.sh:
 /app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
-/app/FaceLock/FaceLock.apk
 /priv-app/GoogleBackupTransport/GoogleBackupTransport.apk
 /priv-app/GoogleFeedback/GoogleFeedback.apk
 /priv-app/GoogleLoginService/GoogleLoginService.apk
@@ -25,8 +24,6 @@ Import the following apks from the Nexus image using the add_sourceapp.sh:
 /priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
 /priv-app/SetupWizard/SetupWizard.apk
 /priv-app/TagGoogle/TagGoogle.apk
-/lib/libfacelock_jni.so
-/lib/libfilterpack_facedetect.so
 /lib/libjni_latinimegoogle.so
 
 ---

@@ -29,12 +29,6 @@
     -->
 
     <exception
-            package="com.android.facelock">
-        <!-- Camera -->
-        <permission name="android.permission.CAMERA" fixed="false"/>
-    </exception>
-
-    <exception
             package="com.android.vending">
         <!-- Contacts -->
         <permission name="android.permission.READ_CONTACTS" fixed="false"/>
@@ -105,6 +99,13 @@
         <!-- Storage -->
         <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.apps.nexuslauncher">
+        <!-- Status bar -->
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS" fixed="false"/>
+        <permission name="android.permission.STATUS_BAR" fixed="false"/>
     </exception>
 
     <exception
@@ -319,6 +320,11 @@
         <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
         <permission name="android.permission.USE_SIP" fixed="false"/>
         <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Network -->
+        <permission name="android.permission.REQUEST_NETWORK_SCORES" fixed="false"/>
     </exception>
 
     <exception
@@ -383,6 +389,11 @@
         <!-- Storage -->
         <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.apps.wellbeing">
+    <permission name="android.permission.SUSPEND_APPS" fixed="false"/>
     </exception>
 
 </exceptions>
